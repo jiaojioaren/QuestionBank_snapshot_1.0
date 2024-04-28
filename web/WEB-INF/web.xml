@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>login</servlet-name>
-        <servlet-class>controller.user.UserLogin</servlet-class>
+        <servlet-class>UserAuthentication.UserLogin</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>login</servlet-name>
@@ -15,7 +15,7 @@
 
     <servlet>
         <servlet-name>register</servlet-name>
-        <servlet-class>controller.user.UserRegister</servlet-class>
+        <servlet-class>UserAuthentication.UserRegister</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>register</servlet-name>
@@ -24,28 +24,46 @@
 
     <filter>
         <filter-name>userFilter</filter-name>
-        <filter-class>filter.UserFilter</filter-class>
+        <filter-class>UserAuthentication.UserFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>userFilter</filter-name>
-        <url-pattern>/Dashboard/*</url-pattern>
+        <url-pattern>/QuestionManagement/*</url-pattern>
     </filter-mapping>
 
     <servlet>
         <servlet-name>add2cart</servlet-name>
-        <servlet-class>controller.cart.addToCart</servlet-class>
+        <servlet-class>ExamComposition.addToCart</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>add2cart</servlet-name>
-        <url-pattern>/Dashboard/addToCart</url-pattern>
+        <url-pattern>/addToCart</url-pattern>
     </servlet-mapping>
 
     <servlet>
         <servlet-name>showAllCart</servlet-name>
-        <servlet-class>controller.cart.showCart</servlet-class>
+        <servlet-class>ExamComposition.showCart</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>showAllCart</servlet-name>
-        <url-pattern>/Dashboard/showCart</url-pattern>
+        <url-pattern>/showCart</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Test_1</servlet-name>
+        <servlet-class>Test.addToCartTest</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Test_1</servlet-name>
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deleteFromCart</servlet-name>
+        <servlet-class>ExamComposition.deleteFromCart</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteFromCart</servlet-name>
+        <url-pattern>/delete</url-pattern>
     </servlet-mapping>
 </web-app>
