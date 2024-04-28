@@ -1,5 +1,5 @@
 # QuestionBank_snapshot_1.0
-使用javaweb实现的题库信息管理与组卷系统
+使用javaweb实现的题库信息管理与组卷系统，基于Servlet，Tomcat。
 
 //2024-04-27
 实现了以下功能：
